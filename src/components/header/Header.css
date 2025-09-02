@@ -1,0 +1,36 @@
+.header{
+    height: 40vw;
+    margin: 30px auto;
+    background: url('./header_img.png') no-repeat;
+    background-size: contain;
+    position: relative;
+}
+.content{
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5vw;
+    max-width: 50%;
+    bottom: 25%;
+    left: 6vw;
+    animation: fadeIn 3s;
+}
+.content h2{
+    color: white;
+    font-weight: 10000;
+    font-size: 50px;
+}
+.content p{
+     color: white;
+     font-weight: 400;
+}
+.content button{
+    border: none;
+    height: 60px;
+    width: 140px;
+    border-radius: 50px;
+    color: rgb(38, 38, 38);
+    font-weight: 1000;
+    cursor: pointer;
+}
