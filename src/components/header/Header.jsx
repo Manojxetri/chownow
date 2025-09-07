@@ -12,7 +12,9 @@ const Header = () => {
           doorstep. Simple, fast, and convenient — satisfying your hunger has
           never been this easy!
         </p>
-        <button>View Menu</button>
+      <a href="#menu">
+         <button>View Menu</button>
+        </a> 
       </div>
     </div>
   );

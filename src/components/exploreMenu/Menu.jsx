@@ -1,10 +1,14 @@
 import React from "react";
 import "./Menu.css";
 import { menu_list } from "../../assets/assets";
+import { Link } from "react-router-dom";
+import { useState } from "react";
+import '../navbar/Navbar.css'
 
 const Menu = ({category,setCategory}) => {
+   const[menu,setMenu]=useState("menu")
   return (
-    <div className="menu" id="mneu">
+    <div className="menu" id="menu">
       <h1>Explore our menu</h1>
       <p className="menu-text">
         Discover a world of flavors with ChowNow! From sizzling starters and
@@ -15,14 +19,14 @@ const Menu = ({category,setCategory}) => {
       <div className="menu-list">
         {menu_list.map((item,index)=>{
             return(
-                <div onClick={()=>{
+               <div onClick={()=>{
                     setCategory(prev=>prev===item.menu_name?"All":item.menu_name)
                 }} key={index} className="menu-item"> 
                        <img  src={item.menu_image} alt="menu-image" className={category===item.menu_name?"active":""} />
                        <p>{item.menu_name}</p>
                 </div>
             )
-        })}
+          })}
       </div>
       <hr/>
     </div>

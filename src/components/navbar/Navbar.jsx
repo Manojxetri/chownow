@@ -9,24 +9,25 @@ const Navbar = () => {
     <div className='navbar'>
         <img src={assets.logo} alt="logo" className="logo" />
         <ul className="navbar-menu">
-            <li onClick={()=>setMenu("home")}   className={menu==="home"?"active":""} >
-               <Link to='/'>Home</Link> 
-                </li>
-            <li onClick={()=>setMenu("menu")}  className={menu==="menu"?"active":""}>
-                <Link to='/menu'>
+            <Link onClick={()=>setMenu("home")}   className={menu==="home"?"active":""} >
+             Home   </Link>
+            <a href='#menu' onClick={()=>setMenu("menu")}  className={menu==="menu"?"active":""}>
+
                  Menu
-                </Link>
-                </li>
-            <li onClick={()=>setMenu("mobile-app")}  className={menu==="mobile-app"?"active":""}>
-                 <Link to='/mobile-app'>
-                 Mobile-App
-                </Link>
-            </li>
-            <li onClick={()=>setMenu("contact")}  className={menu==="contact"?"active":""}>
-                 <Link to='/contact'>
+               
+                </a>
+
+
+                <a href='#app-download' onClick={()=>setMenu("mobile-app")}  className={menu==="mobile-app"?"active":""}>
+                   Mobile-App
+               
+                </a>
+           
+            <a  href='#footer' onClick={()=>setMenu("contact")}  className={menu==="contact"?"active":""}>
+               
                  Contact
-                </Link>
-            </li>
+               
+            </a>
             
         </ul>
 
