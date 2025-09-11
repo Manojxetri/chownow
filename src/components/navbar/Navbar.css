@@ -1,9 +1,10 @@
-.navbar{
-    padding: 20px 0px;
+.navbar {
+    padding: 15px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .navbar .logo{
     height: 155px;
     cursor: pointer;
